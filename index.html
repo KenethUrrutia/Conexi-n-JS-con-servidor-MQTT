@@ -1,15 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mqtt/4.3.7/mqtt.min.js"></script>
     <script src="https://d3js.org/d3.v2.js"></script>
-    <script src="./sketch.js"></script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.css"></link>
+    <script src="sketch.js"></script>
     <title>Document</title>
 </head>
 <body>
+    <div>
+      <div class="card border-primary mb-3" style="max-width: 20rem;">
+        <div class="card-header">Distancia</div>
+        <div class="card-body">
+          <h4 class="card-title" id="distancia">100 cm</h4>
+        </div>
+      </div>
+
+
+      <div class="card border-secondary mb-3" style="max-width: 20rem;">
+        <div class="card-header">Temperatura Celcius</div>
+        <div class="card-body">
+          <h4 class="card-title" id="tempC">37 </h4>
+          
+        </div>
+      </div>
+
+
+      <div class="card border-success mb-3" style="max-width: 20rem;">
+        <div class="card-header">Temperatura Farenheit</div>
+        <div class="card-body">
+          <h4 class="card-title" id="tempF">100</h4>
+        </div>
+      </div>
+
+
+      <div class="card border-danger mb-3" style="max-width: 20rem;">
+        <div class="card-header">Humedad </div>
+        <div class="card-body">
+          <h4 class="card-title" id="humedad">28</h4>
+        </div>
+      </div>
+
+      <div class="card border-warning mb-3" style="max-width: 20rem;">
+        <div class="card-header">Sensacion termica Celcius</div>
+        <div class="card-body">
+          <h4 class="card-title" id="heatC">35</h4>
+        </div>
+      </div>
+
+      <div class="card border-info mb-3" style="max-width: 20rem;">
+        <div class="card-header">Sensacion termica Farenheit</div>
+        <div class="card-body">
+          <h4 class="card-title" id="heatF">90</h4>
+        </div>
+      </div>
+
+
+    </div>
     
 </body>
 </html>
